@@ -1,0 +1,474 @@
+@charset "utf-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    /* border: 1px solid red; */
+}
+:root {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #000;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.inner {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 160px;
+    position: fixed;
+    top: 0;
+    height: 0;
+    z-index: 10;
+}
+.topUtill {
+    width: 100%;
+    height: 40px;
+    background: #073956;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.topUtill > a {
+    color: #cccccc;
+    margin-right: 10px;
+}
+.topUtill > a:hover {
+    text-decoration: underline;
+}
+.top {
+    height: 120px;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    transition: all 0.3s 0.3s ease;
+}
+.top:hover, .top.scroll {
+    background: #ffffff;
+    border-bottom: 1px solid #b8b2b262;
+}
+.top > .inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainLogo {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.mainLogo > img {
+    height: 100%;
+}
+.logoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #005aab;
+}
+.gnb {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.75rem;
+}
+.depth1 {
+    position: relative;
+    padding: 0 30px;
+}
+.depth1 > a:hover {
+    color: #005aab;
+}
+.depth2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 160px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background: #ffffff;
+    border-bottom: 1px solid #b8b2b262;
+
+}
+.depth2 > li {
+    font-size: 1.5rem;
+    margin: 0 20px;
+}
+.depth2 > li > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+}
+.mainVisual {
+    height: 760px;
+    background: url(../images/mainVisual.png) 50% 100% no-repeat;
+    background-size: cover;
+}
+.mainVisual .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+.copy {
+    font-size: 2.5rem;
+}
+.mainTitle {
+    font-size: 3.75rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+.btBox {
+    display: flex;
+    justify-content: center;
+}
+.moveBt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #1898e4;
+}
+.moveBt:nth-child(1) {
+    margin-right: 20px;
+    background: #21e0be;
+}
+.btArrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    background: #25658b;
+}
+.btArrow::before {
+    content: "\f054";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .8;
+}
+.moveBt:nth-child(1) .btArrow {
+    background: #2a8978;
+}
+.step {
+    width: 100%;
+    height: 150px;
+    background: #005aab;
+    color: #ffffff;
+}
+.step-box {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.step-info {
+    width: 20%;
+    padding: 10px;
+    padding-right: 40px;
+    position: relative;
+}
+.step-info::before {
+    content: "\f054";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translatey(-50%);
+    font-size: 3rem;
+    opacity: .6;
+}
+.step-info:last-child::before {
+    display: none;
+}
+.step-info p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    opacity: .6;
+}
+.process {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.step-info.fas {
+    line-height: inherit;
+}
+
+.content {
+    margin: 40px 0;
+}
+.content > .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content > .inner > div {
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fees {
+    background-color: #21e0bd3d;
+}
+.fees h2 {
+    margin-bottom: 10px;
+}
+.fees ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.fees ul li:nth-child(1), .fees ul li:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.feesImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 95px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    background-color: #2a897821;
+}
+.feesImg > img {
+    width: 80%;
+    height: 80%;
+}
+.fees ul li:hover .feesImg {
+    background: #ffffffa1;
+}
+.notice {
+    width: 58%;
+    margin: 0 20px;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 0 10px #eeeeee;
+}
+.titleBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.moreBt {
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+.moreBt::before {
+    content: "\f067";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+.titleBox:hover .moreBt {
+    background: #c41428;
+}
+.titleBox:hover .moreBt::before {
+    color: #ffffff;
+}
+.notice ul {
+    margin-top: 20px;
+    border-top: 1px dashed #999999;
+    padding-top: 20px;
+}
+.notice ul li {
+    padding: 10px;
+}
+.notice > ul > li > a {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.noticeTitle {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 80%;
+}
+.date {
+    color: #333333;
+}
+.notice > ul > li > a::before {
+    opacity: 0;
+}
+.notice > ul > li > a:hover:before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #999999;
+    opacity: 1;
+}
+.agency {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #25668b1a;
+    position: relative;
+}
+.agencyText {
+    font-size: 1.75rem;
+}
+.agencyText span {
+    font-weight: 600;
+    color: #222E99;
+}
+.selectBox{
+    position: relative;
+}
+.selectBox::before {
+    content: "\f078";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #000;   
+}
+select {
+    margin: 20px 0;
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    appearance: none;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    background: #c41428;
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+#value {
+    margin-right: 10px;
+}
+
+.help {
+    margin-bottom: 80px;
+}
+.help .inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 0 10px #eeeeee;
+}
+.helpText > a {
+    position: relative;
+    color: #999999;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.helpText > a::before{
+    content: "\f054";
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
+.helpText > a:hover {
+    color: #000000;
+}
+.helpText > span {
+    display: block;
+    font-size: 2rem;
+}
+
+.help .inner > ul {
+    display: flex;
+    align-items: center;
+}
+.help .inner > ul > li > a {
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    background: #1898e4;
+    color: #ffffff;
+}
+.help .inner > ul > li:hover > a {
+    text-decoration: underline;
+}
+.help .inner > ul > li:nth-child(2) > a {
+    margin: 0 20px;
+}
+
+footer {
+    width: 100%;
+    height: 160px;
+    background: #333333;
+}
+footer .inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.footerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin-right: 20px;
+}
+.footerLogo > img {
+    height: 100%;
+}
+.footerGroup {
+    display: flex;
+    flex-direction: column;
+    color: #999999;
+}
+.footerGroup > ul {
+    display: flex;
+    margin-bottom: 10px;
+}
+.footerGroup > ul > li {
+    margin-right: 20px;
+}
+.footerGroup > ul > li > a:hover {
+    text-decoration: underline;
+}

@@ -1,48 +1,286 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-    <title>서울특별시 관악구 </title>
+    <title>관악구 대형폐기물 배출신청</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/SKviewCss-main.css">
-    <link rel="stylesheet" media="all and (max-width: 640px)" href="./css/gwanakWasteCss-main.css">
+    <link rel="stylesheet" type="text/css" href="./css/indexStyle.css">
+    <!-- <link rel="stylesheet" media="all and (max-width: 1080px)" href="./css/index-tStyle.css"> -->
+    <!-- <link rel="stylesheet" media="all and (max-width: 768px)" href="./css/index-mStyle.css"> -->
+    <link rel="shortcut icon" href="#">
 </head>
-
 <body>
     <header>
-        <div class="move-container">
-            <div class="inner">
-                <a href="#" class="login">로그인</a>
-                <a href="#">바로가기</a>
-            </div>
+        <div class="topUtill">
+            <a href="#" class="login">로그인</a>
+            <a href="https://www.gwanak.go.kr/" class="homePage">관악구청 홈페이지 바로가기</a>
         </div>
         <div class="top">
-            <a href="#" class="mainLogo">
-                <span>대형폐기물 배출신청</span>
-            </a>
-            <ul class="gnb">
-                <li class="depth1">
-                    <a href="#">대형폐기물 안내</a>
-                    <ul >
-                        <li class="depth2">
-                            <a href="#">
-                                배출신청 안내
-                            </a>
-                            <a href="#">
-                                환불절차 안내
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-            </ul>
-            <div class="button">
-                <span class="search"></span>
-                <span class="menuBt"></span>
+            <div class="inner">
+                <a href="#" class="mainLogo">
+                    <img src="./images/logo.png" alt="로고">
+                    <div class="logoText">
+                        <span>대형폐기물</span>
+                        <span>배출신청</span>
+                    </div>
+                </a>
+                <ul class="gnb">
+                    <li class="depth1">
+                        <a href="#">대형폐기물 안내</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="#">
+                                    배출신청 안내
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    무상배출 안내
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">수수료 안내</a>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">온라인 신청</a>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">신청 조회</a>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">커뮤니티</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="#">
+                                    공지사항
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    F&Q
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <li class="closeBt">
+                        <i class="fas fa-times"></i>
+                    </li> -->
+                </ul>
+                <!-- <span class="menuBt">
+                <i class="fas fa-bars menuBt"></i>
+            </span> -->
+                <!-- <span class="secrchBt">
+            </span> -->
             </div>
         </div>
     </header>
+    <main>
+        <section class="mainVisual">
+            <div class="inner">
+                <p class="copy">온라인으로 간편하게!</p>
+                <h1 class="mainTitle">대형 폐기물 신청</h1>
+                <div class="btBox">
+                    <a href="#" class="moveBt">
+                        <span>온라인 신청</span>
+                        <span class="btArrow fas fa-chevron-right"></span>
+                    </a>
+                    <a href="#" class="moveBt">
+                        <span>신청 조회하기</span>
+                        <span class="btArrow fas fa-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <aside class="step">
+            <ul class="step-box inner">
+                <li class="step-info fas fa-chevron-right">
+                    <p>STEP 1</p>
+                    <span class="process">온라인 신청 클릭</span>
+                </li>
+                <li class="step-info fas fa-chevron-right">
+                    <p>STEP 2</p>
+                    <span class="process">신청자 정보 입력</span>
+                </li>
+                <li class="step-info fas fa-chevron-right">
+                    <p>STEP 3</p>
+                    <span class="process">수수료 결제</span>
+                </li>
+                <li class="step-info fas fa-chevron-right">
+                    <p>STEP 4</p>
+                    <span class="process">필증 출력 및 부착</span>
+                </li>
+                <li class="step-info">
+                    <p>STEP 5</p>
+                    <span class="process">폐기물 수거</span>
+                </li>
+            </ul>
+        </aside>
+        <section class="content">
+            <div class="inner">
+                <div class="fees">
+                    <h2>수수료 안내</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="feesImg">
+                                    <img src="./images/fridge.png" alt="전자제품류">
+                                </div>
+                                <span class="feesTitle">전자제품류</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="feesImg">
+                                    <img src="./images/bed.png" alt="가구류">
+                                </div>
+                                <span class="feesTitle">가구류</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="feesImg">
+                                    <img src="./images/blocks.png" alt="생활용품">
+                                </div>
+                                <span class="feesTitle">생활용품</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="feesImg">
+                                    <img src="./images/trash-bin.png" alt="기타용품">
+                                </div>
+                                <span class="feesTitle">기타용품</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <article class="notice">
+                    <div class="titleBox">
+                        <h2>공지사항</h2>
+                        <a href="#" class="moreBt fas fa-plus"></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="noticeTitle">폐기물관리법 위반 과태료 사전통지 반송에 따른 공시송달</span>
+                                <p class="date">2022.01.03</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="noticeTitle">관악구, 투명페트병·비닐만 배출 요일제 확대 시행 “단독주택·상가지역도 매주 목요일만 배출해
+                                    주세요”</span>
+                                <p class="date">2021.12.27</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="noticeTitle">『관악구 재활용폐기물 선별처리 대행용역』 우선 협상대상자 선정을 위한 제안서평가 결과 공개</span>
+                                <p class="date"> 2021.12.16</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="noticeTitle">2021년 김장철 채소쓰레기 처리</span>
+                                <p class="date">2021.10.25</p>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <div class="agency">
+                    <div class="agencyText">
+                        우리동네<br> <span>담당기관</span>을<br>
+                        확인하세요!
+                    </div>
+                    <div class="selectBox fas fa-chevron-down">
+                        <select name="agency" onchange="handleOnChange(this)">
+                            <option value="" selected disabled hidden>
+                                선택해주세요.
+                            </option>
+                            <option value="879-5065">보라매동</option>
+                            <option value="879-4245">은천동</option>
+                            <option value="879-4274">성현동</option>
+                            <option value="879-4308">중앙동</option>
+                            <option value="879-4332">청림동</option>
+                            <option value="879-4375">행운동</option>
+                            <option value="879-4387">청룡동</option>
+                            <option value="879-4438">낙성대동</option>
+                            <option value="879-4444">인헌동</option>
+                            <option value="879-4482">남현동</option>
+                            <option value="879-4514">신림동</option>
+                            <option value="879-4544">신사동</option>
+                            <option value="879-4571">조원동</option>
+                            <option value="879-4604">미성동</option>
+                            <option value="879-4633">난곡동</option>
+                            <option value="879-4660">난향동</option>
+                            <option value="879-4692">서원동</option>
+                            <option value="879-7382">신원동</option>
+                            <option value="879-4753">서림동</option>
+                            <option value="879-4782">삼성동</option>
+                            <option value="879-4807">대학동</option>
+                        </select>
+                    </div>
+                    <div class="result">
+                        <span id="value"></span>
+                        <span id="text"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="help">
+            <div class="inner">
+                <div class="helpText">
+                    <a href="#" class="fas fa-chevron-right">
+                        F&Q 바로가기
+                    </a>
+                    <span>대형폐기물! 궁금한 정보를 한눈에</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">#재활용 여부</a>
+                    </li>
+                    <li>
+                        <a href="#">#무상수거</a>
+                    </li>
+                    <li>
+                        <a href="#">#환불절차</a>
+                    </li>
+                </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="inner">
+            <a href="#" class="footerLogo">
+                <img src="./images/logo_footer.png" alt="푸터 로고">
+            </a>
+            <div class="footerGroup">
+                <ul>
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">저작권정책</a>
+                    </li>
+                    <li>
+                        <a href="#">전화번호안내</a>
+                    </li>
+                    <li>
+                        <a href="#">찾아오시는 길</a>
+                    </li>
+                </ul>
+                <div class="copyRight">
+                    <p>(08832) 서울특별시 관악구 관악로 145(봉천동)</p>
+                    <p>TEL02-879-5000 02-879-5000 (120 다산콜센터로 연결) 02-879-6000, 7000(야간, 공휴일/당직실)FAX02-879-7802</p>
+                    <p>COPYRIGHTS© 2020 GWANAK GU, ALL RIGHT RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
