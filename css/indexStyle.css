@@ -87,7 +87,8 @@ header {
     position: relative;
     padding: 0 30px;
 }
-.depth1 > a:hover {
+.depth1 > a:hover, 
+.depth1 > a.active {
     color: #005aab;
 }
 .depth2 {

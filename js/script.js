@@ -14,7 +14,6 @@ target.click(function(){
   target.not($(this)).removeClass("active");
 });
 
-
 $(document).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 100) {
