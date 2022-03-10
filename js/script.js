@@ -7,6 +7,14 @@ $(document).ready(function () {
     });
 });
 
+var target = $('.depth1 > a');
+
+target.click(function(){
+  $(this).addClass("active");
+  target.not($(this)).removeClass("active");
+});
+
+
 $(document).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 100) {
