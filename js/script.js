@@ -17,6 +17,20 @@ $(document).scroll(function () {
     }
   });
 
+  $(function(){
+    $(".tab").first().addClass("on");
+    $(".sectionBG").first().addClass("on");
+
+    $(".tab").click(function () {
+        $(this).addClass('on')
+          .siblings().removeClass('on');
+        $("#" + $(this).data('id')).addClass('on')
+          .siblings().removeClass('on');
+        return false;
+      });
+});
+
+
 function handleOnChange(e) {
     // 선택된 데이터 가져오기
     const value = e.value;
